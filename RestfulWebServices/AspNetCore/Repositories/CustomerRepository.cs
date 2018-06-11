@@ -2,6 +2,7 @@
 {
     using AspNetCore.Data;
     using AspNetCore.Models;
+    using AspNetCore.QueryParameters;
     using System.Linq;
 
     public class CustomerRepository : ICustomerRepository
@@ -13,9 +14,11 @@
             this._context = context;
         }
 
-        public IQueryable<Customer> GetAll()
+        public IQueryable<Customer> GetAll(CustomerQueryParameters customerQueryParameters)
         {
-            return this._context.Customers;
+            return this._context.Customers.OrderBy(x => x.FirstName)
+                .Skip(customerQueryParameters.PageCount * (customerQueryParameters.Page - 1))
+                .Take(customerQueryParameters.PageCount);
         }
 
         public Customer Get(int id)
@@ -37,6 +40,11 @@
         public void Update(Customer customer)
         {
             this._context.Customers.Update(customer);
+        }
+
+        public int Count()
+        {
+            return _context.Customers.Count();
         }
 
         public bool Save()

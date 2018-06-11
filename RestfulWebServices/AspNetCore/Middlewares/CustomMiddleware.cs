@@ -26,7 +26,7 @@
             }
             else
             {
-                Debug.WriteLine($" ---> Request asked for {httpContext.Request.Path} from {_myconfig.Wholename} living in {_myconfig.Addresses.Permanent}");
+                //Debug.WriteLine($" ---> Request asked for {httpContext.Request.Path} from {_myconfig.Wholename} living in {_myconfig.Addresses.Permanent}");
 
                 await _nextDelegate.Invoke(httpContext);
             }

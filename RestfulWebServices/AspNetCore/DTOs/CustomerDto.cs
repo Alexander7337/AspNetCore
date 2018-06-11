@@ -1,9 +1,9 @@
-﻿namespace AspNetCore.Models
+﻿namespace AspNetCore.DTOs
 {
-    public class Customer
+    public class CustomerDto
     {
         public int ID { get; set; }
-        
+
         public string FirstName { get; set; }
 
         public string LastName { get; set; }

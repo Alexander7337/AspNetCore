@@ -2,6 +2,7 @@
 {
     using Microsoft.AspNetCore;
     using Microsoft.AspNetCore.Hosting;
+    using NLog.Web;
 
     public class Program
     {
@@ -13,6 +14,8 @@
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
+                .UseDefaultServiceProvider(options => options.ValidateScopes = false)
+                .UseNLog()
                 .Build();
     }
 }
