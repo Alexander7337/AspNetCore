@@ -43,4 +43,3 @@ D:\Repositories\AspNetCore\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0
 D:\Repositories\AspNetCore\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\AspNetCore.dll
 D:\Repositories\AspNetCore\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\AspNetCore.pdb
 D:\Repositories\AspNetCore\RestfulWebServices\AspNetCore\bin\Debug\netcoreapp2.0\nlog.config
-D:\Repositories\AspNetCore\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

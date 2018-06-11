@@ -4,6 +4,7 @@
     using AspNetCore.Models;
     using AspNetCore.QueryParameters;
     using System.Linq;
+    using System.Linq.Dynamic.Core;
 
     public class CustomerRepository : ICustomerRepository
     {
@@ -16,7 +17,16 @@
 
         public IQueryable<Customer> GetAll(CustomerQueryParameters customerQueryParameters)
         {
-            return this._context.Customers.OrderBy(x => x.FirstName)
+            IQueryable<Customer> _allCustomers = _context.Customers.OrderBy(customerQueryParameters.OrderBy, customerQueryParameters.Descending);
+
+            if (customerQueryParameters.HasQuery)
+            {
+                _allCustomers = _allCustomers
+                    .Where(x => x.FirstName.ToLowerInvariant().Contains(customerQueryParameters.Query.ToLowerInvariant())
+                    || x.LastName.ToLowerInvariant().Contains(customerQueryParameters.Query.ToLowerInvariant()));
+            }
+
+            return _allCustomers
                 .Skip(customerQueryParameters.PageCount * (customerQueryParameters.Page - 1))
                 .Take(customerQueryParameters.PageCount);
         }
