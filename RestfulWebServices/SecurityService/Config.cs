@@ -13,6 +13,10 @@
                 new ApiResource("resourcesScope", "My API")
                 {
                     UserClaims = { "role", "admin", "user", "resourcesScope", "resources.user", "resources.admin" }
+                },
+                new ApiResource("anotherScope", "My API")
+                {
+                    UserClaims =  { "role", "user", "anotherScope", "resources.user" }
                 }
             };
 
@@ -47,7 +51,8 @@
                         IdentityServerConstants.StandardScopes.Email,
                         IdentityServerConstants.StandardScopes.OfflineAccess,
                         "roles",
-                        "resourcesScope"
+                        "resourcesScope",
+                        "anotherScope"
                     }
                 }
             };

@@ -1,12 +1,10 @@
 ﻿namespace SecurityService
 {
-    using IdentityServer4.AccessTokenValidation;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
     using SecurityService.UserServices;
-    using System.IdentityModel.Tokens.Jwt;
 
     public class Startup
     {

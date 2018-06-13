@@ -6,6 +6,7 @@
     using AspNetCore.Models;
     using AspNetCore.Repositories;
     using AspNetCore.Services;
+    using IdentityServer4.AccessTokenValidation;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Diagnostics;
     using Microsoft.AspNetCore.Hosting;
@@ -18,11 +19,6 @@
     using NLog.Web;
     using Swashbuckle.AspNetCore.Swagger;
     using System.Diagnostics;
-    using System.IdentityModel.Tokens.Jwt;
-    using IdentityServer4.AccessTokenValidation;
-    using Microsoft.AspNetCore.Authentication.OpenIdConnect;
-    using Microsoft.AspNetCore.Authentication.Cookies;
-    using System.IO;
 
     public class Startup
     {
