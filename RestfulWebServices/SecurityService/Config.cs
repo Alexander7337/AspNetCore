@@ -16,7 +16,7 @@
                 },
                 new ApiResource("anotherScope", "My API")
                 {
-                    UserClaims =  { "role", "user", "anotherScope", "resources.user" }
+                    //UserClaims =  { "role", "user", "anotherScope", "resources.user" }
                 }
             };
 
@@ -41,15 +41,16 @@
                     ClientId = "postmanClient",
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                     AccessTokenType = AccessTokenType.Jwt,
+                    RefreshTokenUsage = TokenUsage.ReUse,
                     AllowAccessTokensViaBrowser = true,
                     AllowOfflineAccess = true,
                     AlwaysSendClientClaims = true,
                     RequireClientSecret = false,
                     AllowedScopes = {
-                        IdentityServerConstants.StandardScopes.OpenId,
-                        IdentityServerConstants.StandardScopes.Profile,
-                        IdentityServerConstants.StandardScopes.Email,
-                        IdentityServerConstants.StandardScopes.OfflineAccess,
+                        //IdentityServerConstants.StandardScopes.OpenId,
+                        //IdentityServerConstants.StandardScopes.Profile,
+                        //IdentityServerConstants.StandardScopes.Email,
+                        //IdentityServerConstants.StandardScopes.OfflineAccess,
                         "roles",
                         "resourcesScope",
                         "anotherScope"

@@ -3,9 +3,9 @@ D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\bin\Debug\netcorea
 D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\bin\Debug\netcoreapp2.0\SecurityService.runtimeconfig.dev.json
 D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\bin\Debug\netcoreapp2.0\SecurityService.dll
 D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\bin\Debug\netcoreapp2.0\SecurityService.pdb
-D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.csprojAssemblyReference.cache
 D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.csproj.CoreCompileInputs.cache
 D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.AssemblyInfoInputs.cache
 D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.AssemblyInfo.cs
 D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.dll
 D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.pdb
+D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.csprojAssemblyReference.cache

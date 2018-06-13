@@ -14,8 +14,8 @@
     using System.Linq;
 
     [Route("api/customers")]
+    //[Authorize(Policy = "resourcesUser")]
     [Authorize(Policy = "resourcesAdmin")]
-    //[Authorize(Policy = "resourcesAdmin")]
     //[Authorize(Roles = "resources.user")]
     public class CustomersController : Controller
     {
