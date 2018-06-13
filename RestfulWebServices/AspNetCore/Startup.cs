@@ -18,6 +18,10 @@
     using NLog.Web;
     using Swashbuckle.AspNetCore.Swagger;
     using System.Diagnostics;
+    using System.IdentityModel.Tokens.Jwt;
+    using IdentityServer4.AccessTokenValidation;
+    using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+    using Microsoft.AspNetCore.Authentication.Cookies;
     using System.IO;
 
     public class Startup
@@ -55,6 +59,29 @@
             services.AddSwaggerGen(config =>
             {
                 config.SwaggerDoc("v1", new Info { Title = "My WebAPI", Version = "v1" });
+            });
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultScheme = IdentityServerAuthenticationDefaults.AuthenticationScheme;
+            })
+            .AddIdentityServerAuthentication(options =>
+            {
+                options.Authority = "http://localhost:57131/";
+                options.RequireHttpsMetadata = false;
+                options.ApiName = "resourcesScope";
+            });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("resourcesAdmin", policyAdmin =>
+                {
+                    policyAdmin.RequireClaim("role", "resources.admin");
+                });
+                options.AddPolicy("resourcesUser", policyUser =>
+                {
+                    policyUser.RequireClaim("role", "resources.user");
+                });
             });
 
             services.AddMvc(config => {
@@ -97,6 +124,10 @@
                     });
                 });
             }
+
+            //JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+            app.UseAuthentication();
+            //app.UseIdentity();
 
             if (env.IsEnvironment("MyEnvironment"))
             {

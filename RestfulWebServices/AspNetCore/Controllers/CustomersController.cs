@@ -5,6 +5,7 @@
     using AspNetCore.QueryParameters;
     using AspNetCore.Repositories;
     using AutoMapper;
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.JsonPatch;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
@@ -13,6 +14,9 @@
     using System.Linq;
 
     [Route("api/customers")]
+    [Authorize(Policy = "resourcesUser")]
+    //[Authorize(Policy = "resourcesAdmin")]
+    //[Authorize(Roles = "resources.user")]
     public class CustomersController : Controller
     {
         private readonly ILogger _logger;

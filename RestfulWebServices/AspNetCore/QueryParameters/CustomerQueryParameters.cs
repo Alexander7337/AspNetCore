@@ -29,7 +29,7 @@
             {
                 if (!String.IsNullOrEmpty(OrderBy))
                 {
-                    return OrderBy.Split(' ').Last().ToLowerInvariant().StartsWith("desc")
+                    return OrderBy.Split(' ').Last().ToLowerInvariant().StartsWith("desc");
                 };
                 return false;
             }

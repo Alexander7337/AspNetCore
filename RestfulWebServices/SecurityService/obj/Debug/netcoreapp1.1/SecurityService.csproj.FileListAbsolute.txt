@@ -1,0 +1,11 @@
+D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\bin\Debug\netcoreapp1.1\SecurityService.deps.json
+D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\bin\Debug\netcoreapp1.1\SecurityService.runtimeconfig.json
+D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\bin\Debug\netcoreapp1.1\SecurityService.runtimeconfig.dev.json
+D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\bin\Debug\netcoreapp1.1\SecurityService.dll
+D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\bin\Debug\netcoreapp1.1\SecurityService.pdb
+D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\obj\Debug\netcoreapp1.1\SecurityService.csprojAssemblyReference.cache
+D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\obj\Debug\netcoreapp1.1\SecurityService.csproj.CoreCompileInputs.cache
+D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\obj\Debug\netcoreapp1.1\SecurityService.AssemblyInfoInputs.cache
+D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\obj\Debug\netcoreapp1.1\SecurityService.AssemblyInfo.cs
+D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\obj\Debug\netcoreapp1.1\SecurityService.dll
+D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\obj\Debug\netcoreapp1.1\SecurityService.pdb
