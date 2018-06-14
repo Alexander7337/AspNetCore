@@ -16,6 +16,7 @@
                 },
                 new ApiResource("anotherScope", "My API")
                 {
+                    // Web Services Startup.cs should be configured for this scope
                     //UserClaims =  { "role", "user", "anotherScope", "resources.user" }
                 }
             };
