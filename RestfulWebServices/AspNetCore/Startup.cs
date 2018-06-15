@@ -154,7 +154,7 @@
 
             app.AddSeedData();
 
-            app.UseMvc();
+            app.UseMvcWithDefaultRoute();
 
             //app.Run(async (context) =>
             //{
