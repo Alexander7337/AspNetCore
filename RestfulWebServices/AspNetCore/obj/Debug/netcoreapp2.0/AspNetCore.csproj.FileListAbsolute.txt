@@ -1,14 +1,3 @@
-C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\bin\Debug\netcoreapp2.0\AspNetCore.deps.json
-C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\bin\Debug\netcoreapp2.0\AspNetCore.runtimeconfig.json
-C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\bin\Debug\netcoreapp2.0\AspNetCore.runtimeconfig.dev.json
-C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\bin\Debug\netcoreapp2.0\AspNetCore.dll
-C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\bin\Debug\netcoreapp2.0\AspNetCore.pdb
-C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\AspNetCore.csproj.CoreCompileInputs.cache
-C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\AspNetCore.AssemblyInfoInputs.cache
-C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\AspNetCore.AssemblyInfo.cs
-C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\AspNetCore.dll
-C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\AspNetCore.pdb
-C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\AspNetCore.csprojAssemblyReference.cache
 C:\Users\Alexander7337\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\bin\Debug\netcoreapp2.0\AspNetCore.deps.json
 C:\Users\Alexander7337\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\bin\Debug\netcoreapp2.0\AspNetCore.runtimeconfig.json
 C:\Users\Alexander7337\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\bin\Debug\netcoreapp2.0\AspNetCore.runtimeconfig.dev.json
@@ -44,3 +33,16 @@ D:\Repositories\AspNetCore\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0
 D:\Repositories\AspNetCore\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\AspNetCore.AssemblyInfo.cs
 D:\Repositories\AspNetCore\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\AspNetCore.dll
 D:\Repositories\AspNetCore\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\AspNetCore.pdb
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\bin\Debug\netcoreapp2.0\nlog.config
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\bin\Debug\netcoreapp2.0\AspNetCore.deps.json
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\bin\Debug\netcoreapp2.0\AspNetCore.runtimeconfig.json
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\bin\Debug\netcoreapp2.0\AspNetCore.runtimeconfig.dev.json
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\bin\Debug\netcoreapp2.0\AspNetCore.dll
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\bin\Debug\netcoreapp2.0\AspNetCore.pdb
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\AspNetCore.csproj.CoreCompileInputs.cache
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\AspNetCore.AssemblyInfoInputs.cache
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\AspNetCore.AssemblyInfo.cs
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\AspNetCore.dll
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\AspNetCore.pdb
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\AspNetCore\obj\Debug\netcoreapp2.0\AspNetCore.csprojAssemblyReference.cache

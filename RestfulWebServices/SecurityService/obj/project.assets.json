@@ -7676,11 +7676,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repositories\\AspNetCore\\RestfulWebServices\\SecurityService\\SecurityService.csproj",
+      "projectUniqueName": "C:\\Users\\RMD-AYanev\\Documents\\Visual Studio 2017\\Projects\\RestfulWebServices\\SecurityService\\SecurityService.csproj",
       "projectName": "SecurityService",
-      "projectPath": "D:\\Repositories\\AspNetCore\\RestfulWebServices\\SecurityService\\SecurityService.csproj",
+      "projectPath": "C:\\Users\\RMD-AYanev\\Documents\\Visual Studio 2017\\Projects\\RestfulWebServices\\SecurityService\\SecurityService.csproj",
       "packagesPath": "C:\\Users\\RMD-AYanev\\.nuget\\packages\\",
-      "outputPath": "D:\\Repositories\\AspNetCore\\RestfulWebServices\\SecurityService\\obj\\",
+      "outputPath": "C:\\Users\\RMD-AYanev\\Documents\\Visual Studio 2017\\Projects\\RestfulWebServices\\SecurityService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

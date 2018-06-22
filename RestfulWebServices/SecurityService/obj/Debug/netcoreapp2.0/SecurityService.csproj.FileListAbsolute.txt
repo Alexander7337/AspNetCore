@@ -9,3 +9,14 @@ D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\obj\Debug\netcorea
 D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.dll
 D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.pdb
 D:\Repositories\AspNetCore\RestfulWebServices\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.csprojAssemblyReference.cache
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\SecurityService\bin\Debug\netcoreapp2.0\SecurityService.deps.json
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\SecurityService\bin\Debug\netcoreapp2.0\SecurityService.runtimeconfig.json
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\SecurityService\bin\Debug\netcoreapp2.0\SecurityService.runtimeconfig.dev.json
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\SecurityService\bin\Debug\netcoreapp2.0\SecurityService.dll
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\SecurityService\bin\Debug\netcoreapp2.0\SecurityService.pdb
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.csprojAssemblyReference.cache
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.csproj.CoreCompileInputs.cache
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.AssemblyInfoInputs.cache
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.AssemblyInfo.cs
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.dll
+C:\Users\RMD-AYanev\Documents\Visual Studio 2017\Projects\RestfulWebServices\SecurityService\obj\Debug\netcoreapp2.0\SecurityService.pdb

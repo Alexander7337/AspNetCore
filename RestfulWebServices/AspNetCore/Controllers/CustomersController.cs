@@ -1,4 +1,4 @@
-﻿namespace AspNetCore.Controllers
+namespace AspNetCore.Controllers
 {
     using AspNetCore.DTOs;
     using AspNetCore.Models;
@@ -15,7 +15,7 @@
 
     [Route("api/customers")]
     //[Authorize(Policy = "resourcesUser")]
-    [Authorize(Policy = "resourcesAdmin")]
+    //[Authorize(Policy = "resourcesAdmin")]
     //[Authorize(Roles = "resources.user")]
     public class CustomersController : Controller
     {

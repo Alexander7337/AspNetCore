@@ -13825,11 +13825,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repositories\\AspNetCore\\RestfulWebServices\\AspNetCore\\AspNetCore.csproj",
+      "projectUniqueName": "C:\\Users\\RMD-AYanev\\Documents\\Visual Studio 2017\\Projects\\RestfulWebServices\\AspNetCore\\AspNetCore.csproj",
       "projectName": "AspNetCore",
-      "projectPath": "D:\\Repositories\\AspNetCore\\RestfulWebServices\\AspNetCore\\AspNetCore.csproj",
+      "projectPath": "C:\\Users\\RMD-AYanev\\Documents\\Visual Studio 2017\\Projects\\RestfulWebServices\\AspNetCore\\AspNetCore.csproj",
       "packagesPath": "C:\\Users\\RMD-AYanev\\.nuget\\packages\\",
-      "outputPath": "D:\\Repositories\\AspNetCore\\RestfulWebServices\\AspNetCore\\obj\\",
+      "outputPath": "C:\\Users\\RMD-AYanev\\Documents\\Visual Studio 2017\\Projects\\RestfulWebServices\\AspNetCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

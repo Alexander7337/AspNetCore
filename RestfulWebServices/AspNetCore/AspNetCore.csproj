@@ -2,11 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
     <UserSecretsId>13ca6321-f5e8-4299-9d03-94409512a562</UserSecretsId>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="Controllers\Customers2Controller.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="src\app\models\customer.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,6 +36,10 @@
     <Content Update="nlog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\models\customer.ts" />
   </ItemGroup>
 
 </Project>
