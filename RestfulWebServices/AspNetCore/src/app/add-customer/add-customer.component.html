@@ -1,0 +1,29 @@
+<fieldset class="form-group" style="border: 1px solid #eeeeee; border-radius: 10px; padding: 10px; margin: 0px 75px 0px 52px">
+  <legend class="custom-fieldset page-title">
+    Add Customer Form
+  </legend>
+  <div>
+    <div class="col-md-2">
+      <!--<label>First Name: </label>-->
+      <input [(ngModel)]="customerDto.firstName" placeholder="First Name" class="form-control"/>
+    </div>
+    <div class="col-md-2">
+      <!--<label>Last Name: </label>-->
+      <input [(ngModel)]="customerDto.lastName" placeholder="Last Name" class="form-control"/>
+    </div>
+    <div class="col-md-2">
+      <!--<label>Age: </label>-->
+      <input [(ngModel)]="customerDto.age" placeholder="Age" class="form-control"/>
+    </div>
+    <div class="col-md-2">
+      <button (click)="addCustomerByService()" class="btn btn-warning">Add Customer</button>
+    </div>
+  </div>
+  <div *ngIf="firstName" [ngClass]="'success'"> {{firstName}} Added. </div>
+  <div *ngIf="errorMessage" [ngClass]="'error'"> {{errorMessage}} </div>
+</fieldset>
+<br />
+
+<div class="popup" (click)="hidePopup()">
+  <span class="popuptext" id="myPopup">You should log in the application before adding a new customer in the database.</span>
+</div>

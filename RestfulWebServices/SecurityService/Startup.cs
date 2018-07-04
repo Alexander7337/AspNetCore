@@ -14,6 +14,8 @@
         {
             services.AddScoped<IUserRepository, UserRepository>();
 
+            services.AddCors();
+
             services.AddIdentityServer()
                 .AddDeveloperSigningCredential()
                 .AddInMemoryApiResources(Config.GetApiResources())
@@ -34,6 +36,8 @@
 
             app.UseDefaultFiles();
             app.UseStaticFiles();
+
+            app.UseCors();
 
             app.UseIdentityServer();
         }

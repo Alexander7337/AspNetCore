@@ -1,0 +1,60 @@
+.btn-warning {
+  color: #3C3C3C;
+  box-shadow: 0px 2px 0px #bc4809;
+}
+
+.btn-warning:hover {
+  box-shadow: 0px 2px 0px #bc4809;
+}
+
+legend.custom-fieldset {
+  width: inherit;
+  padding: 0 10px;
+  border-bottom: none;
+  color: #317a9f;
+  font-size: small;
+}
+
+.page-title {
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+  color: #1e4368;
+  margin-top: 35px;
+}
+
+.popup {
+  position: absolute;
+  display: inline-block;
+  left: 40%;
+  top: 40%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-color: black;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 380px;
+  background-color: lemonchiffon;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 50px 10px;
+  position: absolute;
+  border-color: black;
+  border: 1px solid;
+  font-size: large;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}

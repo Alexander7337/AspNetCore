@@ -1,0 +1,26 @@
+<!--<ul *ngFor="let customer of customers">
+  <li>
+    <app-customer [customer]="customer"></app-customer>
+  </li>
+</ul>-->
+
+<table *ngIf="isLoggedIn" class="table table-striped">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Age</th>
+      <th></th>
+      <th>ID From DB</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let customer of customers">
+      <td>{{customer.firstName}}</td>
+      <td>{{customer.lastName}}</td>
+      <td>{{customer.age}}</td>
+      <td><app-customer-details [customer]=customer></app-customer-details></td>
+      <td id="customer-details-{{customer.id}}"></td>
+    </tr>
+  </tbody>
+</table>

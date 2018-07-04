@@ -6,7 +6,8 @@ namespace AspNetCore.Controllers
     using AspNetCore.Repositories;
     using AutoMapper;
     using Microsoft.AspNetCore.Authorization;
-    using Microsoft.AspNetCore.JsonPatch;
+  using Microsoft.AspNetCore.Cors;
+  using Microsoft.AspNetCore.JsonPatch;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
     using Newtonsoft.Json;
@@ -14,9 +15,11 @@ namespace AspNetCore.Controllers
     using System.Linq;
 
     [Route("api/customers")]
+    [EnableCors("AllowCors")]
     //[Authorize(Policy = "resourcesUser")]
     //[Authorize(Policy = "resourcesAdmin")]
     //[Authorize(Roles = "resources.user")]
+    //[Authorize]
     public class CustomersController : Controller
     {
         private readonly ILogger _logger;
@@ -31,6 +34,7 @@ namespace AspNetCore.Controllers
 
         [HttpGet]
         [ProducesResponseType(typeof(List<Customer>), 200)]
+        [Authorize(Policy = "resourcesAdmin")]
         public IActionResult GetAllCustomers(CustomerQueryParameters customerQueryParameters)
         {
             _logger.LogInformation("---> GetAllCustomers");
@@ -62,6 +66,7 @@ namespace AspNetCore.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(List<CustomerDto>), 201)]
         [ProducesResponseType(typeof(List<CustomerDto>), 400)]
+        [Authorize(Policy = "resourcesAdmin")]
         public IActionResult AddCustomer([FromBody] CustomerCreateDto customerToAdd)
         {
             if (customerToAdd == null)

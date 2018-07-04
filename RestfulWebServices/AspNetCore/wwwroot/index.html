@@ -2,13 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>AngularApp</title>
+  <title>Angular App</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous" />
 </head>
 <body>
+  <script>
+    var prevId = "";
+    let isDisplayed = false;
+
+    function toggleCustomerID(id) {
+      let currentId = id;
+      if (prevId == currentId) {
+        document.getElementById("customer-details").style.display = 'none';
+      } else {
+        document.getElementById("customer-details").style.display = 'block';
+        id = temp;
+      }
+    }
+  </script>
   <app-root></app-root>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
 </html>

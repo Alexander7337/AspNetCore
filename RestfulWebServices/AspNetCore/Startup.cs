@@ -1,4 +1,4 @@
-﻿namespace AspNetCore
+namespace AspNetCore
 {
     using AspNetCore.Data;
     using AspNetCore.DTOs;
@@ -57,6 +57,13 @@
                 config.SwaggerDoc("v1", new Info { Title = "My WebAPI", Version = "v1" });
             });
 
+            //AY: ASP.NET Core Identity Authentication. If configured, it changes the programming flow.
+            //URL changes noticed, which might be a problem ({{domain}}/account/login?RedirectUri...). NB!!!
+            //services.AddIdentity<Models.ApplicationUser, IdentityRole>()
+            //  .AddEntityFrameworkStores<CustomDbContext>()
+            //  .AddDefaultTokenProviders();
+
+            //AYL Identity Server Authentication
             services.AddAuthentication(options =>
             {
                 options.DefaultScheme = IdentityServerAuthenticationDefaults.AuthenticationScheme;
@@ -68,6 +75,7 @@
                 options.ApiName = "resourcesScope";
             });
 
+            //AY: Policy Requirements
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("resourcesAdmin", policyAdmin =>
@@ -80,6 +88,15 @@
                 });
             });
 
+            //AY: Allow Cross Origin Requests
+            services.AddCors(policy => policy.AddPolicy("AllowCors", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
+
+            //
             services.AddMvc(config => {
                 config.ReturnHttpNotAcceptable = true;
                 config.OutputFormatters.Add(new XmlSerializerOutputFormatter());
@@ -123,6 +140,7 @@
 
             //JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
             app.UseAuthentication();
+            //AY: Obsolete
             //app.UseIdentity();
 
             if (env.IsEnvironment("MyEnvironment"))
@@ -132,11 +150,12 @@
 
             if (env.IsProduction())
             {
-                //
+                // 
             }
             app.UseDefaultFiles();
             app.UseStaticFiles();           
-            
+
+            //AY: Custom Middleware
             app.UseCustomMiddleware();
 
             //AY: Add Swagger
@@ -145,6 +164,7 @@
                 config.SwaggerEndpoint("/swagger/v1/swagger.json", "My WebAPI");
             });
 
+            //AY: Map classes
             AutoMapper.Mapper.Initialize(mapper =>
             {
                 mapper.CreateMap<Customer, CustomerDto>().ReverseMap();
@@ -152,15 +172,16 @@
                 mapper.CreateMap<Customer, CustomerUpdateDto>().ReverseMap();
             });
 
+            //AY: Insert Data in DB
             app.AddSeedData();
 
-            app.UseMvcWithDefaultRoute();
+            //AY: Allow Cross Origin Requests
+            app.UseCors("AllowCors");
 
-            //app.Run(async (context) =>
-            //{
-            //    await context.Response.WriteAsync("Hello World!");
-
-            //});
+            //
+            app.UseMvc(routes =>
+                routes.MapRoute("default", "api/{controller=Customers}/{action?}/{id?}")
+            );
         }
     }
 }

@@ -1,0 +1,43 @@
+<div class="" style="width: 93%; margin: 0px 52px 0px 52px;">
+
+  <fieldset class="form-group" style="border: 1px solid #eeeeee; border-radius: 10px; padding: 10px">
+    <legend class="custom-fieldset page-title">
+      Login Form
+    </legend>
+
+    <form class="">
+      <div class="ui stack segment">
+        <div class="field">
+          <div class="ui left icon input col-md-2">
+            <i class="user icon"></i>
+            <input type="text" name="username" [(ngModel)]="username" placeholder="Username" class="form-control" />
+            <span style="color:red;"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="ui left icon input col-md-2">
+            <i class="lock icon"></i>
+            <input type="password" name="password" [(ngModel)]="password" placeholder="Password" class="form-control" />
+            <span style="color:red"></span>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <button type="button" (click)="manageCredentials(username,password)" class="btn btn-warning">
+            Login
+          </button>
+        </div>
+
+        <div class="col-md-2">
+          <button type="button" (click)="logout()" class="btn btn-danger">
+            Logout
+          </button>
+        </div>
+
+        <div class="ui error" style="color:red;"></div>
+      </div>
+    </form>
+
+  </fieldset>
+</div>

@@ -1,8 +1,6 @@
-﻿namespace AspNetCore.Services
+namespace AspNetCore.Services
 {
-    using System.Threading.Tasks;
-
-    public interface ISeedDataService
+  public interface ISeedDataService
     {
         void EnsureSeedData();
     }

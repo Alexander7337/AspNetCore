@@ -1,4 +1,4 @@
-﻿namespace AspNetCore
+namespace AspNetCore
 {
     using Microsoft.AspNetCore;
     using Microsoft.AspNetCore.Hosting;

@@ -35,11 +35,13 @@
 
         public static IEnumerable<Client> GetClients()
         {
-            return new List<Client>
+                  return new List<Client>
             {
                 new Client
                 {
-                    ClientId = "postmanClient",
+                    ClientId = "a1",
+                    Enabled = true,
+                    //ClientSecrets = new List<Secret>() { new Secret ("secret") },
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                     AccessTokenType = AccessTokenType.Jwt,
                     RefreshTokenUsage = TokenUsage.ReUse,
@@ -52,6 +54,23 @@
                         //IdentityServerConstants.StandardScopes.Profile,
                         //IdentityServerConstants.StandardScopes.Email,
                         //IdentityServerConstants.StandardScopes.OfflineAccess,
+                        "roles",
+                        "resourcesScope",
+                        "anotherScope"
+                    }
+                },
+                new Client
+                {
+                    ClientId = "a2",
+                    Enabled = true,
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    //AccessTokenType = AccessTokenType.Jwt,
+                    //RefreshTokenUsage = TokenUsage.ReUse,
+                    //AllowAccessTokensViaBrowser = true,
+                    //AllowOfflineAccess = true,
+                    //AlwaysSendClientClaims = true,
+                    //RequireClientSecret = false,
+                    AllowedScopes = {
                         "roles",
                         "resourcesScope",
                         "anotherScope"

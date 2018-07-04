@@ -9,10 +9,18 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\Customers2Controller.cs" />
+    <Compile Remove="Controllers\LoginController.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="src\app\file.ts" />
+    <None Remove="src\app\login-service.ts" />
     <None Remove="src\app\models\customer.ts" />
+    <None Remove="src\app\models\login.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="src\assets\core.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +29,7 @@
     <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.6.0" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.6" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Xml" Version="2.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.3" />
@@ -39,7 +48,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="src\app\file.ts" />
+    <TypeScriptCompile Include="src\app\login-service.ts" />
     <TypeScriptCompile Include="src\app\models\customer.ts" />
+    <TypeScriptCompile Include="src\app\models\login.ts" />
   </ItemGroup>
 
 </Project>
